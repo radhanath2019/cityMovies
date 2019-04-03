@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <!-- <ion-menu-button></ion-menu-button> -->
+        </ion-buttons>
+    <ion-title text-align="center">
+      City Movies
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+     <ion-item>
+      <ion-label position="floating">UserId</ion-label>
+      <ion-input type="text" [(ngModel)]="UserId"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="Password"></ion-input>
+    </ion-item>
+    <ion-button (click)="onLogin()"  expand="half" class="">Login</ion-button> <br/><br/>
+    <ion-button (click)="Register()" expand="half">Register</ion-button><br/><br/>
+    <ion-button color="dark"><a href='https://www.facebook.com/'><ion-icon name="contact"></ion-icon>GUEST USER</a></ion-button>
+
+    <!-- <ion-button (click)="forgetpassword()" expand="half">Forget Password</ion-button> -->
+    <div padding >
+      <div class="forget-password">
+          <a routerLink="/forget-password">Forgot Password?</a>
+      </div>
+      
+      </div>
+  </ion-card>
+</ion-content>
